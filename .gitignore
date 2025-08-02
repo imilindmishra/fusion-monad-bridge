@@ -1,0 +1,274 @@
+# 🌉 Fusion+ Monad Bridge - Git Ignore Configuration
+# ============================================================================
+
+# ============================================================================
+# 🔐 CRITICAL SECURITY - NEVER COMMIT THESE!
+# ============================================================================
+
+# Environment files with sensitive data
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# Private keys and secrets
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+private/
+
+# Wallet files
+keystore/
+wallets/
+mnemonic.txt
+
+# ============================================================================
+# 📦 DEPENDENCIES & PACKAGES
+# ============================================================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# NPM/Package manager artifacts
+=*
+.npm/
+.yarn/
+.pnpm/
+
+# Package manager lock files (keep yarn.lock or package-lock.json, not both)
+# package-lock.json
+# yarn.lock
+
+# ============================================================================
+# 🏗️ BUILD OUTPUTS & ARTIFACTS
+# ============================================================================
+
+# TypeScript build outputs
+dist/
+build/
+out/
+
+# Hardhat/Solidity artifacts
+artifacts/
+cache/
+typechain-types/
+
+# Next.js build output
+.next/
+next-env.d.ts
+
+# React build
+build/
+public/static/
+
+# ============================================================================
+# 📊 LOGS & MONITORING
+# ============================================================================
+
+# Log files
+*.log
+logs/
+*.log.*
+log-*.txt
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
+
+# ============================================================================
+# 🔧 DEVELOPMENT TOOLS
+# ============================================================================
+
+# IDE and Editor files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+tmp/
+
+# ============================================================================
+# 🧪 TESTING & DEVELOPMENT
+# ============================================================================
+
+# Test artifacts
+test-results/
+test-output/
+.jest/
+.coverage/
+
+# Local development databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# ============================================================================
+# 📁 PROJECT SPECIFIC
+# ============================================================================
+
+# Deployment records (keep examples, ignore real ones)
+deployments/*
+!deployments/.gitkeep
+!deployments/example.json
+
+# Test files with potentially sensitive data
+test-*.ts
+demo-*.ts
+inspect-*.ts
+
+# Transaction and deployment artifacts
+transaction-hashes.json
+deployment-addresses.json
+gas-usage.json
+
+# Local configuration
+config/local.json
+config/development.json
+config/production.json
+
+# Generated documentation
+docs/api/
+docs/generated/
+
+# Frontend specific
+public/config.js
+src/config/local.ts
+
+# Backend specific
+backend/config/local.ts
+backend/uploads/
+backend/temp/
+
+# ============================================================================
+# 🌐 FRONTEND SPECIFIC
+# ============================================================================
+
+# React
+.eslintcache
+src/**/*.js.map
+src/**/*.css.map
+
+# Production builds
+dist-web/
+web-build/
+
+# Static files
+static/js/
+static/css/
+static/media/
+
+# ============================================================================
+# ⛓️ BLOCKCHAIN SPECIFIC
+# ============================================================================
+
+# Hardhat
+/contracts/flattened/
+/scripts/deployed-addresses.json
+
+# Truffle
+/build/
+
+# Foundry
+/out/
+/cache_forge/
+
+# Gas reports
+gas-report.txt
+.gas-snapshot
+
+# Slither reports
+slither-report.json
+
+# ============================================================================
+# 📱 MOBILE (if applicable)
+# ============================================================================
+
+# React Native
+.expo/
+.expo-shared/
+
+# ============================================================================
+# ☁️ CLOUD & DEPLOYMENT
+# ============================================================================
+
+# Serverless Framework
+.serverless/
+
+# AWS
+.aws/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# ============================================================================
+# 📋 KEEP THESE FILES (IMPORTANT FOR PROJECT)
+# ============================================================================
+
+# Keep these files even if they might seem like build artifacts:
+# !README.md
+# !package.json
+# !tsconfig.json
+# !hardhat.config.ts
+# !.env.example
+# !contracts/
+# !frontend/
+# !backend/
+# !scripts/
+# !test/
+
+# ============================================================================
+# 🔄 BACKUP FILES
+# ============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*-backup.*
+*-old.*
+
+# ============================================================================
+# 🆔 GENERATED IDs
+# ============================================================================
+
+# Generated IDs and addresses that shouldn't be committed
+deployed-addresses.json
+contract-addresses.json
+transaction-hashes.json

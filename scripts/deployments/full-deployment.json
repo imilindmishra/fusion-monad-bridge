@@ -1,0 +1,20 @@
+{
+  "networks": {
+    "sepolia": {
+      "chainId": 11155111,
+      "contracts": {
+        "EthereumHTLC": "0xE6DC9225E4C76f9c0b002Ab2782F687e35cc7666",
+        "FusionMonadAdapter": "0x135336371a3C6Db17400Ec82B5d23c5806F93B56"
+      }
+    },
+    "monad": {
+      "chainId": 10143,
+      "contracts": {
+        "MonadHTLC": "0xE6DC9225E4C76f9c0b002Ab2782F687e35cc7666",
+        "MonadBridge": "0x135336371a3C6Db17400Ec82B5d23c5806F93B56"
+      }
+    }
+  },
+  "deployedAt": "2025-08-01T18:15:21.688Z",
+  "deployer": "0xC8FF43FE2902dd70d9ace849f384222aF4c8030a"
+}
